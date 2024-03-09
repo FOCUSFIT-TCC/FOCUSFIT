@@ -110,15 +110,64 @@ $stmt_user->close();
         <td><p class="informacoes"><?php echo $tipo_de_plano; ?></p></td>
     </tr>
 </table>
-</center>   
+
 </b>
 
+ <br><br><br><br> <br><br> <br>  <h1 class="heading"> <span>Tarefas Semanais</span> </h1>
 
-
+ 
+ <div class="container2">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                <i class="fa-solid fa-glass-water"></i>
+                    <h3>Hidrate-se</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b style="color: #ff0000;">Hidrate-se Diariamente </b> <br>Descrição: "Beba água diariamente para manter-se saudável."</p>
+               <i>    <b> <p style="color: #ff0000;"><i class="fa-solid fa-coins" style="color: #ff0000;"></i> : 550</p></b></i>
+                    <br>  <a class="btnd"   href="#">Ler Sobre</a> <br>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                <i class="fa-solid fa-shoe-prints"></i>
+                    <h3>Corra</h3>
+                    
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                <p><b style="color: #ff0000;">Corra 25km na Semana </b> <br>Descrição: "Corra 25km semanalmente para melhorar sua saúde."</p>
+                    <i>    <b> <p style="color: #ff0000;"><i class="fa-solid fa-coins" style="color: #ff0000;"></i> : 2550</p></b></i>
+                  <br>   <a class="btnd"   href="#">Ler Sobre</a><br>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                <i class="fa-solid fa-jedi"></i>
+                    <h3>Flexões</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                <p><b style="color: #ff0000;">300 Flexões na Semana </b> <br>Descrição: "Complete 300 flexões esta semana para fortalecimento."</p>
+                    <i>    <b> <p style="color: #ff0000;"><i class="fa-solid fa-coins" style="color: #ff0000;"></i> : 1000</p></b></i>
+                    <br>  <a class="btnd"   href="#">Ler Sobre</a> <br>
+                </div>
+            </div>
+        </div>
+    </div>
         <br> <br> <br> <a href="../Calculadora_IMC/calc.php" class="btn1">Iniciar Teste</a>
     </div>
 </div>
-
+</center>   
 
 </main>
 

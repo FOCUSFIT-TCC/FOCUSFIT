@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <form action="" method="post">
       <div class="grid-wrapper grid-col-auto">
         <label for="radio-card-1" class="radio-card">
-          <input type="radio" name="objetivo" value="ganho_massa" id="radio-card-1" checked />
+          <input type="radio" name="objetivo" value="ganho de massa" id="radio-card-1" checked />
           <div class="card-content-wrapper">
             <span class="check-icon"></span>
             <div class="card-content">
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- /.radio-card -->
 
         <label for="radio-card-2" class="radio-card">
-          <input type="radio" name="objetivo" value="perca_peso" id="radio-card-2" />
+          <input type="radio" name="objetivo" value="perca de peso" id="radio-card-2" />
           <div class="card-content-wrapper">
             <span class="check-icon"></span>
             <div class="card-content">
