@@ -163,15 +163,127 @@ $stmt_user->close();
                 </div>
             </div>
         </div>
+
+        
     </div>
-        <br> <br> <br> <a href="../Calculadora_IMC/calc.php" class="btn1">Iniciar Teste</a>
+        <br> <br> <br>   <br> <br> <br> <a href="../Calculadora_IMC/calc.php" class="btn1">Iniciar Teste</a>
     </div>
 </div>
 </center>   
 
+<br><br><br><br> <br><br> <br>  <h1 class="heading"> <span>Destaques</span> </h1> <br>
+
+ <div class="ag-format-container">
+  <div class="ag-courses_box">
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          IA atualizada 
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          Start:
+          <span class="ag-courses-item_date">
+            03.03.24
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          API própria
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          Start:
+          <span class="ag-courses-item_date">
+            01.02.24
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Lojas Parceiras
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          Start:
+          <span class="ag-courses-item_date">
+            09.02.24
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Avaliador Físico
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          Start:
+          <span class="ag-courses-item_date">
+            01.01.24
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Se tornar STAFF?
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          Start:
+          <span class="ag-courses-item_date">
+            07.05.24
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Discord
+        </div>
+        <div class="ag-courses-item_date-box">
+          Start:
+          <span class="ag-courses-item_date">
+            04.05.24
+          </span>
+        </div>
+      </a>
+    </div>
+
+   
+
+  </div>
+</div>
+
 </main>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>\
 <footer class="footer">
         <div class="box-container">
             <div class="box">
