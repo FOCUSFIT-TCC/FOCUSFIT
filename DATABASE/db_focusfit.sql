@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12/03/2024 às 02:22
+-- Tempo de geração: 14/03/2024 às 01:30
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -56,24 +56,25 @@ CREATE TABLE `users_login` (
   `password` varchar(255) NOT NULL,
   `ativo` tinyint(1) NOT NULL,
   `perfil_id` int(11) NOT NULL,
-  `nome` varchar(110) NOT NULL
+  `nome` varchar(110) NOT NULL,
+  `foto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `users_login`
 --
 
-INSERT INTO `users_login` (`id`, `email`, `username`, `password`, `ativo`, `perfil_id`, `nome`) VALUES
-(1, 'teste@gmail.com', 'gdgedg', 'asgs', 1, 2, 'Teste3'),
-(2, 'teste01@gmail.com', 'userteste01', 'sounerd123', 1, 2, 'Teste2'),
-(4, 'adm03@gmail.com', 'Pedro Alex', 'pedro123', 1, 2, 'Pedro'),
-(5, 'davi@gmail.com', 'Davi', 'davi123', 1, 2, 'Davi'),
-(6, 'martins@gmail.com', 'Kaue Martins', 'kaue123', 1, 2, 'Kaue'),
-(7, 'leo@gmail.com', 'Leonardo', 'leo123', 1, 2, 'Leonardo'),
-(8, 'testeuser@gmail.com', 'testeuser', '123', 1, 2, 'Teste'),
-(9, 'lu@gmail.com', 'Luciano', 'lu123', 0, 2, 'Luciano'),
-(10, 'icarootario@gmail.com', 'Pedro', '123', 1, 2, 'Icaro'),
-(12, 'leandro@gmail.com', 'Leandro', 'Leandro1', 1, 1, 'Leandro');
+INSERT INTO `users_login` (`id`, `email`, `username`, `password`, `ativo`, `perfil_id`, `nome`, `foto`) VALUES
+(1, 'teste@gmail.com', 'gdgedg', 'asgs', 1, 2, 'Teste3', NULL),
+(2, 'teste01@gmail.com', 'userteste01', 'sounerd123', 1, 2, 'Teste2', NULL),
+(4, 'adm03@gmail.com', 'Pedro Alex', 'pedro123', 1, 2, 'Pedro', NULL),
+(5, 'davi@gmail.com', 'Davi', 'davi123', 1, 2, 'Davi', NULL),
+(6, 'martins@gmail.com', 'Kaue Martins', 'kaue123', 1, 2, 'Kaue', NULL),
+(7, 'leo@gmail.com', 'Leonardo', 'leo123', 0, 1, 'Leonardo21', 'https://i.pinimg.com/236x/95/2d/a0/952da03b73f0810c8d58c4087bccb509.jpg'),
+(8, 'testeuser@gmail.com', 'testeuser', '123', 1, 2, 'Teste', NULL),
+(9, 'lu@gmail.com', 'Luciano', 'lu123', 0, 2, 'Luciano', NULL),
+(10, 'icarootario@gmail.com', 'Pedro', '123', 1, 2, 'Icaro', NULL),
+(12, 'leandro@gmail.com', 'Leandro', 'Leandro1', 1, 1, 'Leandro', 'opa');
 
 -- --------------------------------------------------------
 
@@ -88,21 +89,20 @@ CREATE TABLE `user_infos` (
   `objetivo` varchar(255) DEFAULT NULL,
   `imc` float DEFAULT NULL,
   `tipo_plano` varchar(20) DEFAULT NULL,
-  `perm` varchar(20) DEFAULT NULL,
-  `foto_perfil` varchar(255) DEFAULT NULL
+  `perm` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `user_infos`
 --
 
-INSERT INTO `user_infos` (`id`, `user_id`, `idade`, `objetivo`, `imc`, `tipo_plano`, `perm`, `foto_perfil`) VALUES
-(26, 8, 'velho', NULL, NULL, NULL, NULL, NULL),
-(29, 9, 'adulto', NULL, NULL, NULL, NULL, 'https://i.em.com.br/J2PwYzMF_MceC7Yek18wGIbiDX4=/1200x1200/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/02/06/1453747/desenho-de-um-anime-homem-loiro-de-olhos-azuis_1_50529.jpg'),
-(30, 5, NULL, 'ganho_massa', NULL, NULL, NULL, NULL),
-(41, 10, NULL, 'perca_peso', NULL, NULL, NULL, NULL),
-(42, 4, NULL, 'ganho_massa', NULL, NULL, NULL, NULL),
-(44, 12, 'jovem', 'perca_peso', 32.14, NULL, NULL, NULL);
+INSERT INTO `user_infos` (`id`, `user_id`, `idade`, `objetivo`, `imc`, `tipo_plano`, `perm`) VALUES
+(26, 8, 'velho', NULL, NULL, NULL, NULL),
+(29, 9, 'adulto', NULL, NULL, NULL, NULL),
+(30, 5, NULL, 'ganho_massa', NULL, NULL, NULL),
+(41, 10, NULL, 'perca_peso', NULL, NULL, NULL),
+(42, 4, NULL, 'ganho_massa', NULL, NULL, NULL),
+(44, 12, 'jovem', 'perca_peso', 32.14, NULL, NULL);
 
 --
 -- Índices para tabelas despejadas
