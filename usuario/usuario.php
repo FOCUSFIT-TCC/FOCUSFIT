@@ -31,7 +31,7 @@ if ($result_user->num_rows > 0) {
     if ($result_foto_perfil->num_rows > 0) {
         $foto_perfil = $result_foto_perfil->fetch_assoc()['foto_perfil'];
     } else {
-        $foto_perfil = ''; // Se não houver foto de perfil, define como uma string vazia
+        $foto_perfil = ''; // string vazia;prc
     }
 
     $stmt_foto_perfil->close();
