@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST["senha"];
 
     // Query para inserir os dados na tabela
-    $sql = "INSERT INTO users_login (username, email, password, perfil_id ) VALUES ('$nome', '$email', '$senha', 2)";
+    $sql = "INSERT INTO users_login (nome, username, email, password, perfil_id ) VALUES ('$nome', '$nome', '$email', '$senha', 2)";
 
     if ($conexao->query($sql) === TRUE) {
         // Cadastro realizado com sucesso
