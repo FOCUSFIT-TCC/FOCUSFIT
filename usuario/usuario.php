@@ -22,14 +22,14 @@ if ($result_user->num_rows > 0) {
     $username = $user['username'];
 
     // Obtém o link da foto de perfil
-    $sql_foto_perfil = "SELECT foto_perfil FROM user_infos WHERE user_id = ?";
+    $sql_foto_perfil = "SELECT foto FROM users_login WHERE id  = ?";
     $stmt_foto_perfil = $conexao->prepare($sql_foto_perfil);
     $stmt_foto_perfil->bind_param('i', $user_id);
     $stmt_foto_perfil->execute();
     $result_foto_perfil = $stmt_foto_perfil->get_result();
 
     if ($result_foto_perfil->num_rows > 0) {
-        $foto_perfil = $result_foto_perfil->fetch_assoc()['foto_perfil'];
+        $foto_perfil = $result_foto_perfil->fetch_assoc()['foto'];
     } else {
         $foto_perfil = ''; // string vazia;prc
     }
@@ -84,7 +84,7 @@ $stmt_user->close();
 <div class="container">
     <br>
     <div>
-        <img src="img/user.png" alt="" class="fotodeperfil" id="usericon">
+        <img src="<?php echo $foto_perfil; ?>" alt="" class="fotodeperfil" id="usericon">
         <p class="nome"><?php echo $username; ?></p> <br> <br>
         <p class="e-mail"><?php echo $user_email; ?></p>
 
