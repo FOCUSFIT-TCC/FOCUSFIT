@@ -65,6 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta charset="UTF-8">
   <title>Objetivo | FOCUSFIT</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+  <link rel="shortcut icon" type="imagex/png" class="imagex"  href="../img/logos/pag.png">
   <link rel="stylesheet" href="../assets/css/objetivo/style.css">
 </head>
 <body>

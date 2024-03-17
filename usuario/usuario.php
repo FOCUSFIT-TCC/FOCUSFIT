@@ -70,8 +70,9 @@ $stmt_user->close();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Foto de Perfil | FOCUSFIT</title>
+    <title>Perfil | FOCUSFIT</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel="shortcut icon" type="imagex/png" class="imagex"  href="../img/logos/pag.png">
     <link rel="stylesheet" href="../../FOCUSFIT/assets/css/usuario/usuario.css">
     
 </head>
@@ -128,7 +129,7 @@ $stmt_user->close();
                 <div class="content">
                     <p><b style="color: #ff0000;">Hidrate-se Diariamente </b> <br>Descrição: "Beba água diariamente para manter-se saudável."</p>
                <i>    <b> <p style="color: #ff0000;"><i class="fa-solid fa-coins" style="color: #ff0000;"></i> : 550</p></b></i>
-                    <br>  <a class="btnd"   href="#">Ler Sobre</a> <br>
+                    <br>  <a class="btnd"   href="../wiki/focus_coins.html">Ler Sobre</a> <br>
                 </div>
             </div>
         </div>
@@ -144,7 +145,7 @@ $stmt_user->close();
                 <div class="content">
                 <p><b style="color: #ff0000;">Corra 25km na Semana </b> <br>Descrição: "Corra 25km semanalmente para melhorar sua saúde."</p>
                     <i>    <b> <p style="color: #ff0000;"><i class="fa-solid fa-coins" style="color: #ff0000;"></i> : 2550</p></b></i>
-                  <br>   <a class="btnd"   href="#">Ler Sobre</a><br>
+                  <br>   <a class="btnd"   href="../wiki/focus_coins.html">Ler Sobre</a><br>
                 </div>
             </div>
         </div>
@@ -159,7 +160,7 @@ $stmt_user->close();
                 <div class="content">
                 <p><b style="color: #ff0000;">300 Flexões na Semana </b> <br>Descrição: "Complete 300 flexões esta semana para fortalecimento."</p>
                     <i>    <b> <p style="color: #ff0000;"><i class="fa-solid fa-coins" style="color: #ff0000;"></i> : 1000</p></b></i>
-                    <br>  <a class="btnd"   href="#">Ler Sobre</a> <br>
+                    <br>  <a class="btnd"   href="../wiki/focus_coins.html">Ler Sobre</a> <br>
                 </div>
             </div>
         </div>
@@ -283,7 +284,7 @@ $stmt_user->close();
 
 </main>
 
-<br><br><br><br><br><br><br><br><br><br>\
+<br><br><br><br><br><br><br><br><br><br>
 <footer class="footer">
         <div class="box-container">
             <div class="box">
