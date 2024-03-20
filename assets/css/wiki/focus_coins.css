@@ -291,6 +291,10 @@ section {
   background-image: url('../../../img/wilki/mar2.png');
 }
 
+.marombados3{
+  background-image: url('../../../img/wilki/coizos.png');
+}
+
 
 .card {
   border-radius: 16px;
@@ -374,6 +378,40 @@ section {
 .card:hover .img span {
   font-size: 28px;
 }
+
+
+.card .imgf {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: url('../../../img/wilki/robo_maromba3.png');
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+  z-index: 2;
+  position: relative;
+  opacity: .8;
+}
+
+.card .imgf span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  transition: all .5s;
+}
+
+.card:hover .imgf {
+  width: 430px;
+  opacity: 1;
+}
+
+.card:hover .imgf span {
+  font-size: 28px;
+}
+
 
 .card .content {
   padding: 0px 20px;

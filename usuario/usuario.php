@@ -194,7 +194,7 @@ $stmt_user->close();
     </div>
 
     <div class="ag-courses_item">
-      <a href="#" class="ag-courses-item_link">
+      <a href="../wiki/focus_coins.html" class="ag-courses-item_link">
         <div class="ag-courses-item_bg"></div>
 
         <div class="ag-courses-item_title">
@@ -228,7 +228,7 @@ $stmt_user->close();
     </div>
 
     <div class="ag-courses_item">
-      <a href="#" class="ag-courses-item_link">
+      <a href="https://discord.gg/JMPhUXUCrM" class="ag-courses-item_link">
         <div class="ag-courses-item_bg"></div>
 
         <div class="ag-courses-item_title">
@@ -245,7 +245,7 @@ $stmt_user->close();
     </div>
 
     <div class="ag-courses_item">
-      <a href="#" class="ag-courses-item_link">
+      <a href="https://forms.gle/GnBkAjXHrBK7mnRU8" class="ag-courses-item_link">
         <div class="ag-courses-item_bg"></div>
 
         <div class="ag-courses-item_title">
@@ -262,7 +262,7 @@ $stmt_user->close();
     </div>
 
     <div class="ag-courses_item">
-      <a href="https://discord.gg/RFtyZVKu8J" class="ag-courses-item_link">
+      <a href="https://discord.gg/JMPhUXUCrM" class="ag-courses-item_link">
         <div class="ag-courses-item_bg"></div>
 
         <div class="ag-courses-item_title">
