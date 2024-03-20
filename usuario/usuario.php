@@ -177,17 +177,17 @@ $stmt_user->close();
  <div class="ag-format-container">
   <div class="ag-courses_box">
     <div class="ag-courses_item">
-      <a href="#" class="ag-courses-item_link">
+      <a href="../funcoes/clima/index.html" class="ag-courses-item_link">
         <div class="ag-courses-item_bg"></div>
 
         <div class="ag-courses-item_title">
-          IA atualizada 
+          Clima
         </div>
 
         <div class="ag-courses-item_date-box">
           Start:
           <span class="ag-courses-item_date">
-            03.03.24
+            18.03.24
           </span>
         </div>
       </a>
@@ -262,7 +262,7 @@ $stmt_user->close();
     </div>
 
     <div class="ag-courses_item">
-      <a href="#" class="ag-courses-item_link">
+      <a href="https://discord.gg/RFtyZVKu8J" class="ag-courses-item_link">
         <div class="ag-courses-item_bg"></div>
 
         <div class="ag-courses-item_title">
@@ -305,6 +305,7 @@ $stmt_user->close();
                     <a href="https://www.instagram.com/focusfit.tcc/" class="fab fa-instagram"></a>
                     <a href="https://twitter.com/FocusFit184204" class="fab fa-twitter"></a>
                     <a href="https://br.pinterest.com/focusfittcc/" class="fab fa-pinterest"></a>
+                    <a href="https://discord.gg/RFtyZVKu8J" class="fab fa-discord"></a>
                     
                 </div>
             </div>

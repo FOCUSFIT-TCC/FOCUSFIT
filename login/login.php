@@ -39,22 +39,22 @@
             <form class="form form-login" method="post" action="crud_bd/login.php">
                     <h2 class="form-title">Entrar com</h2>
                     <div class="form-social">
+                     
                         <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
+                        <i class="fa-solid fa-hammer"></i>
                         </a>
                         <a href="#" class="social-icon">
                             <i class="fab fa-google"></i>
                         </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                       
                     </div>
                     <p class="form-text">ou utilize sua conta</p>
                     <div class="form-input-container">
                     <input type="email" class="form-input" name="email" placeholder="Email" required>
                 <input type="password" class="form-input" name="senha" placeholder="Senha" required>
                     </div>
-                    <a href="#" class="form-link">Esqueceu a senha?</a>
+                    <a href="#" class="form-link">Esqueceu a senha?</a> 
+                    <a   style="font-size: 13px; margin-top: -5px;" href="#" class="form-link">É um staff?</a> 
                     <button type="submit" class="form-button">Logar</button>
                     <p class="mobile-text">
                         Não tem conta?
@@ -103,6 +103,8 @@
     </main>
 </body>
 
+<script src="https://kit.fontawesome.com/f0c76a2bf3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </html>
 
 <?php
