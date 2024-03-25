@@ -15,6 +15,7 @@
 
 body{
     background-color: black;
+    background-image: url(../../../img/wilki/back.png);
     color: white;
 }
 .fotodeperfil{
@@ -260,7 +261,7 @@ body{
 
 
 .footer .box-container {
-    background-color: #0a0a0a28;
+    background-color: #000000b4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Reduzindo o tamanho mínimo */
     gap: 1rem; /* Reduzindo o espaçamento entre os elementos */

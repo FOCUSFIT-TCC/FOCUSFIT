@@ -21,7 +21,7 @@ if ($result_user->num_rows > 0) {
     $user_email = $user['email'];
     $username = $user['username'];
 
-    // Obtém o link da foto de perfil
+    
     $sql_foto_perfil = "SELECT foto FROM users_login WHERE id  = ?";
     $stmt_foto_perfil = $conexao->prepare($sql_foto_perfil);
     $stmt_foto_perfil->bind_param('i', $user_id);
@@ -39,6 +39,8 @@ if ($result_user->num_rows > 0) {
     header('Location: ../../login.php');
     exit;
 }
+
+
 
 // Consulta o banco de dados para obter as informações da tabela users_infos
 $sql_infos = "SELECT idade, objetivo, imc, tipo_plano FROM user_infos WHERE user_id = ?";
@@ -64,6 +66,9 @@ if ($result_infos->num_rows > 0) {
 
 $stmt_infos->close();
 $stmt_user->close();
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -85,7 +90,8 @@ $stmt_user->close();
 <div class="container">
     <br>
     <div>
-        <img src="<?php echo $foto_perfil; ?>" alt="" class="fotodeperfil" id="usericon">
+    <img src="<?php echo $foto_perfil; ?>" alt="" class="fotodeperfil" id="usericon" onclick="solicitarURL()">
+<br> <br><br> <br><br> <br>
         <p class="nome"><?php echo $username; ?></p> <br> <br>
         <p class="e-mail"><?php echo $user_email; ?></p>
 
@@ -305,7 +311,7 @@ $stmt_user->close();
                     <a href="https://www.instagram.com/focusfit.tcc/" class="fab fa-instagram"></a>
                     <a href="https://twitter.com/FocusFit184204" class="fab fa-twitter"></a>
                     <a href="https://br.pinterest.com/focusfittcc/" class="fab fa-pinterest"></a>
-                    <a href="https://discord.gg/RFtyZVKu8J" class="fab fa-discord"></a>
+                    <a href="https://discord.gg/C84gVqG7wF" class="fab fa-discord"></a>
                     
                 </div>
             </div>
