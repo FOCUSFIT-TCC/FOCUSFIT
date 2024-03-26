@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['url'])) {
     $url_foto = $_GET['url'];
 
     // Atualiza o campo foto_perfil na tabela user_info
-    $sql_update_foto_perfil = "UPDATE user_infos SET foto_perfil = ? WHERE user_id = ?";
+    $sql_update_foto_perfil = "UPDATE users_login SET foto = ? WHERE id = ?";
     
     // Preparação da consulta
     $stmt_update_foto_perfil = $conexao->prepare($sql_update_foto_perfil);
@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['url'])) {
     header('Cache-Control: max-age=31536000'); // Cache por 1 ano
     
     echo 'Foto de perfil atualizada com sucesso!';
+    echo "<script>window.location.href='usuario.php';</script>";
 } else {
     echo 'Parâmetros ausentes ou inválidos.';
 }
