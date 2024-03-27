@@ -35,6 +35,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background: #000;
+    background-image: url("../../img/wilki/back.png");
 }
 
 section {

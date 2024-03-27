@@ -92,17 +92,31 @@ $stmt_user->close();
     <div class="container">
       <br>
       <div>
-        <img src="<?php echo $foto_perfil; ?>" alt="" class="fotodeperfil" id="usericon">
-        <?php
+   <!-- Adicione um identificador único à sua imagem de perfil -->
+<img src="<?php echo $foto_perfil; ?>" alt="" class="fotodeperfil" id="usericon">
 
-        if ($foto_perfil == null || $foto_perfil == "") {
-          echo "<script>var foto = prompt('Insira a url da sua foto');
-          var foto_tratada = encodeURI(foto);
-          window.location.href = 'salvar_foto_perfil.php?url=' + foto_tratada;
-        </script>";
-        }
+<?php
+// Verifique se a foto de perfil está vazia ou nula
 
-        ?>
+    // Use JavaScript para adicionar um evento de clique à imagem
+    echo "
+    <script>
+        // Função para lidar com o clique na imagem de perfil
+        document.getElementById('usericon').addEventListener('click', function() {
+            // Exibir o prompt para inserir a URL da foto
+            var foto = prompt('Insira a URL da sua foto');
+            // Verificar se o usuário inseriu uma URL
+            if (foto !== null && foto !== '') {
+                // Codificar a URL
+                var foto_tratada = encodeURI(foto);
+                // Redirecionar para a página de salvar a foto com a URL fornecida
+                window.location.href = 'salvar_foto_perfil.php?url=' + foto_tratada;
+            }
+        });
+    </script>
+    ";
+
+?>
         <br> <br><br> <br><br> <br>
         <p class="nome"><?php echo $username; ?></p> <br> <br>
         <p class="e-mail"><?php echo $user_email; ?></p>

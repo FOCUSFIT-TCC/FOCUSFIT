@@ -76,7 +76,7 @@
                     </div>
                     <p class="form-text">ou cadastre seu email</p>
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Nome" name="nome">
+                        <input type="username" class="form-input" placeholder="Nome" name="nome">
                         <input type="email" class="form-input" placeholder="Email" name="email">
                         <input type="password" class="form-input" placeholder="Senha" name="senha">
                     </div>
