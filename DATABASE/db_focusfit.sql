@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14/03/2024 às 01:30
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 07/04/2024 às 04:13
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +41,38 @@ CREATE TABLE `perfil` (
 
 INSERT INTO `perfil` (`id`, `nome`, `data_criacao`, `data_modificacao`, `ativo`) VALUES
 (1, 'Administrador', '2024-03-12 01:25:27', NULL, 1),
-(2, 'Cliente', '2024-03-12 01:25:27', NULL, 1);
+(2, 'Cliente', '2024-03-12 01:25:27', NULL, 1),
+(3, 'Perfil3', '0000-00-00 00:00:00', NULL, 1),
+(4, 'Perfil4', '2024-03-19 21:18:24', '2024-03-19 21:26:34', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `tabela_nutricional`
+--
+
+CREATE TABLE `tabela_nutricional` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(150) NOT NULL,
+  `valor_energetico` float NOT NULL,
+  `carboidratos` float NOT NULL,
+  `proteinas` float NOT NULL,
+  `gorduras_totais` float NOT NULL,
+  `gorduras_saturadas` float NOT NULL,
+  `gorduras_trans` float NOT NULL,
+  `fibra_alimentar` float NOT NULL,
+  `sodio` float NOT NULL,
+  `acucar` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tabela_nutricional`
+--
+
+INSERT INTO `tabela_nutricional` (`id`, `nome`, `valor_energetico`, `carboidratos`, `proteinas`, `gorduras_totais`, `gorduras_saturadas`, `gorduras_trans`, `fibra_alimentar`, `sodio`, `acucar`) VALUES
+(1, 'chocolate', 4, 5, 5, 6, 6, 6, 10, 10, 20),
+(2, 'Arroz', 4, 4, 4, 4, 4, 4, 4, 4, 4),
+(3, 'Filé de Frango', 101, 0, 28, 1, 1, 1, 0, 56, 0);
 
 -- --------------------------------------------------------
 
@@ -74,7 +105,9 @@ INSERT INTO `users_login` (`id`, `email`, `username`, `password`, `ativo`, `perf
 (8, 'testeuser@gmail.com', 'testeuser', '123', 1, 2, 'Teste', NULL),
 (9, 'lu@gmail.com', 'Luciano', 'lu123', 0, 2, 'Luciano', NULL),
 (10, 'icarootario@gmail.com', 'Pedro', '123', 1, 2, 'Icaro', NULL),
-(12, 'leandro@gmail.com', 'Leandro', 'Leandro1', 1, 1, 'Leandro', 'opa');
+(12, 'leandro@gmail.com', 'Leandro', 'Leandro1', 1, 1, 'Leandro', 'https://www.florence.edu.br/wp-content/uploads/2022/08/Imagem-Materia_Dia-do-Cachorro.png'),
+(14, 'teste2@gmail.com', '', '', 0, 2, 'Novo', ''),
+(15, 'gomao@gmail.com', 'Gomes', 'gomes123', 1, 1, 'Gomes', 'https://conteudo.imguol.com.br/c/esporte/82/2021/06/02/gol-de-bicicleta-de-cristiano-ronaldo-pelo-real-madrid-contra-a-juventus-1622663604572_v2_750x750.jpg');
 
 -- --------------------------------------------------------
 
@@ -102,7 +135,8 @@ INSERT INTO `user_infos` (`id`, `user_id`, `idade`, `objetivo`, `imc`, `tipo_pla
 (30, 5, NULL, 'ganho_massa', NULL, NULL, NULL),
 (41, 10, NULL, 'perca_peso', NULL, NULL, NULL),
 (42, 4, NULL, 'ganho_massa', NULL, NULL, NULL),
-(44, 12, 'jovem', 'perca_peso', 32.14, NULL, NULL);
+(44, 12, 'jovem', 'perca_peso', 32.14, NULL, NULL),
+(45, 15, 'jovem (18-26)', 'ganho de massa', 27.78, NULL, NULL);
 
 --
 -- Índices para tabelas despejadas
@@ -112,6 +146,12 @@ INSERT INTO `user_infos` (`id`, `user_id`, `idade`, `objetivo`, `imc`, `tipo_pla
 -- Índices de tabela `perfil`
 --
 ALTER TABLE `perfil`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices de tabela `tabela_nutricional`
+--
+ALTER TABLE `tabela_nutricional`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -138,19 +178,25 @@ ALTER TABLE `user_infos`
 -- AUTO_INCREMENT de tabela `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de tabela `tabela_nutricional`
+--
+ALTER TABLE `tabela_nutricional`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `users_login`
 --
 ALTER TABLE `users_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `user_infos`
 --
 ALTER TABLE `user_infos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- Restrições para tabelas despejadas
