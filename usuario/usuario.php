@@ -59,7 +59,7 @@ if ($result_infos->num_rows > 0) {
   $idade = $infos['idade'];
   $objetivo = $infos['objetivo'];
   $imc = $infos['imc'];
-  $tipo_de_plano = $infos['tipo_de_plano'] ?? "Plano Inicial"; // Se for null, define como "Plano Inicial"
+  $tipo_de_plano = $infos['tipo_plano'] ?? "Plano Inicial"; // Se for null, define como "Plano Inicial"
 } else {
   $idade = $objetivo = $imc = $tipo_de_plano = "N/A"; // Se não houver informações, define como "N/A"
 }
@@ -118,9 +118,10 @@ $stmt_user->close();
 
 ?>
         <br> <br><br> <br><br> <br>
-        <p class="nome"><?php echo $username; ?></p> <br> <br>
-        <p class="e-mail"><?php echo $user_email; ?></p>
-
+        <p class="nome"><?php echo $username; ?></p> <br> <br>  <br>  <br> 
+        <p class="e-mail"><?php echo $user_email; ?></p> <br><br>
+        <p class="id"><?php echo "ID: ". $user_id; ?></p> 
+       
 
         <br><br><br>
         <b>

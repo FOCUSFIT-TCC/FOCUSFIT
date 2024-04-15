@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/main2.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" type="imagex/png" class="imagex" href="../img/logos/pag.png">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <br> <br>
     <h1 class="heading"> <span>Planos</span> </h1>
     <section id="pricing" class="pricing">
         <div class="information">
@@ -35,7 +36,7 @@
                 <p> <i class="fas fa-check"></i>IA auxiliadora</p>
                 <p> <i class="fas fa-check"></i>Treino em casa</p>
             </div>
-            <a href="#" class="btn" id="comprarPlano">Comprar</a>
+            <a href="processar_compra.php" class="btn" id="comprarPlano">Comprar</a>
         </div>
 
         <div class="plan">
@@ -49,28 +50,47 @@
                 <p> <i class="fas fa-check"></i>Nutricionistas parceiros</p>
                 <p> <i class="fas fa-check"></i>Suplementação possível</p>
             </div>
-            <a href="#" class="btn" id="comprarPlano">Comprar</a>
+            <a href="../assets/emdev.html" class="btn" id="comprarPlano">Comprar</a>
         </div>
-    </section>
-
+    </section> <br> <br> <br><br> <br>
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a class="links" href="#home">Início</a>
+                <a class="links" href="#about">Sobre</a>
+                <a class="links" href="#features">Serviços</a>
+                <a class="links" href="#pricing">Planos</a>
+                <a class="links" href="#blogs">blogs</a>
+            </div>
+        
+            <div class="box">
+                <h3>Nossos Contatos</h3>
+                <p> <i class="fas fa-phone"></i> +55 12 97600-0166 </p>
+                <p> <i class="fas fa-envelope"></i> focusfit.tcc@gmail.com  </p>
+                <p> <i class="fas fa-map"></i> São Paulo, Brasil</p>
+                <div class="share">
+                    <a href="https://www.instagram.com/focusfit.tcc/" class="fab fa-instagram"></a>
+                    <a href="https://twitter.com/FocusFit184204" class="fab fa-twitter"></a>
+                    <a href="https://br.pinterest.com/focusfittcc/" class="fab fa-pinterest"></a>
+                    <a href="https://discord.gg/C84gVqG7wF" class="fab fa-discord"></a>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <h3>Novidades</h3>
+                <p>Se inscreva para receber as novidades</p>
+                <form action="">
+                    <input type="email" name="" class="email" placeholder="digite seu e-mail" id="">
+                    <input type="submit" value="Inscrever-se" class="btn">
+                </form>
+            </div>
+        </div>
+    </footer>
     <?php
-    // Verifique se o e-mail está vazio ou nulo
+  
     
-    // Use JavaScript para adicionar um evento de clique ao botão de compra do plano
-    echo "
-            <script>
-            document.getElementById('comprarPlano').addEventListener('click', function() {
-                var email = prompt('Insira o seu e-mail para comprar o plano');
-                if (email !== null && email !== '') {
-                    // Redirecionar para a página de processamento da compra com o e-mail fornecido como parâmetro na URL
-                    window.location.href = 'processar_compra.php?email=' + encodeURIComponent(email);
-                }
-            });
 
-            </script>
-
-           
-";
     ?>
 
 

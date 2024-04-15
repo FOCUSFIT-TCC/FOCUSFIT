@@ -16,15 +16,11 @@
 
 
 <div class="container">
-  <form>
+  <form action="ecner.php" method="post">
     <div class="row">
       <h4>Conta</h4>
       <div class="input-group input-group-icon">
-        <input type="text" placeholder="Nome completo"/>
-        <div class="input-icon"><i class="fa fa-user"></i></div>
-      </div>
-      <div class="input-group input-group-icon">
-        <input type="email" placeholder="Email"/>
+        <input type="text" name="id" placeholder="ID"/>
         <div class="input-icon"><i class="fa fa-envelope"></i></div>
       </div>
       <div class="input-group input-group-icon">
@@ -97,7 +93,7 @@
       </div>
     </div>
     <center>
-    <button class="noselect"><span class='text'>Finalizar</span><span class="icon"><i style="font-size: 14px; color: white;" class="fa-solid fa-arrow-right"></i></button>
+    <button type="submit" class="noselect"><span class='text'>Finalizar</span><span class="icon"><i style="font-size: 14px; color: white;" class="fa-solid fa-arrow-right"></i></button>
     </center>
  
   </form>
