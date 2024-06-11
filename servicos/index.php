@@ -33,27 +33,29 @@
             </div>
 
 
-            <div class="box second">
+            <div class="box">
                 <div class="image">
-                    <img src="../img/Hipertrofia-Muscular-1024x576-1-e1706297551412.webp" alt="">
+                    <img src="../img/cardio.webp" alt="">
                 </div>
                 <div class="content">
-                    <img src="../img/icons/homem.png" alt="">
-                    <h3>Homens</h3>
-                    <p>Treinos Musculares Específicos para Homens.</p>
+                    <img src="../img/icons/cardio (1).png" alt="">
+                    <h3>Cardiovasculares</h3>
+
+                    <p>Melhore Sua Resistência e Saúde do Coração.</p>
                     <a href="#" class="btn">Veja Mais</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="../img/Academia-em-cuiaba.jpg" alt="">
+                    <img src="../img/nutri-feed-asi1099238.png" alt="">
                 </div>
                 <div class="content">
-                    <img src="../img/icons/femea.png" alt="">
-                    <h3>Mulheres</h3>
-                    <p>Treinos Musculares Específicos para Mulheres.</p>
-                    <a href="#" class="btn">Ler Mais</a>
+                    <img src="../img/icons/teste-nutricional.png" alt="">
+                    <h3>Tabelas Nutricionais</h3>
+
+                    <p>Descubra os Segredos da Alimentação Balanceada.</p>
+                    <a href="#" class="btn">Veja Mais</a>
                 </div>
             </div>
 
@@ -73,19 +75,7 @@
         <!--Fim serviços-->
 
         <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="../img/cardio.webp" alt="">
-                </div>
-                <div class="content">
-                    <img src="../img/icons/cardio (1).png" alt="">
-                    <h3>Cardiovasculares</h3>
-
-                    <p>Melhore Sua Resistência e Saúde do Coração.</p>
-                    <a href="#" class="btn">Veja Mais</a>
-                </div>
-            </div>
-
+           
 
             <div class="box second">
                 <div class="image">
@@ -128,18 +118,6 @@
         <!--Fim serviços-->
 
         <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="../img/nutri-feed-asi1099238.png" alt="">
-                </div>
-                <div class="content">
-                    <img src="../img/icons/teste-nutricional.png" alt="">
-                    <h3>Tabelas Nutricionais</h3>
-
-                    <p>Descubra os Segredos da Alimentação Balanceada.</p>
-                    <a href="#" class="btn">Veja Mais</a>
-                </div>
-            </div>
 
 
             <div class="box second">
@@ -189,7 +167,7 @@
                 <a class="links" href="#home">Início</a>
                 <a class="links" href="#about">Sobre</a>
                 <a class="links" href="#features">Serviços</a>
-                <a class="links" href="#pricing">Planos</a>
+              
                 <a class="links" href="#blogs">blogs</a>
             </div>
 

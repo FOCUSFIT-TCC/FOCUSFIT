@@ -94,7 +94,7 @@
                     <button class="form-button form-button-light" id="open-login">Entrar</button>
                 </div>
                 <div class="overlay">
-                    <h2 class="form-title form-title-light">Olá Aluno!</h2>
+                    <h2 class="form-title form-title-light">Olá!</h2>
                     <p class="form-text">Cadastre-se e comece a usar a nossa plataforma on-line</p>
                     <button class="form-button form-button-light" id="open-register">Cadastrar</button>
                 </div>

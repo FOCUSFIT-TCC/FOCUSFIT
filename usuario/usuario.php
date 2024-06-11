@@ -151,14 +151,6 @@ $stmt_user->close();
                   <p class="informacoes"><?php echo $imc; ?></p>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <p class="informacoes">Tipo de Plano:</p>
-                </td>
-                <td>
-                  <p class="informacoes"><?php echo $tipo_de_plano; ?></p>
-                </td>
-              </tr>
             </table>
 
         </b>
@@ -349,7 +341,7 @@ $stmt_user->close();
         <a class="links" href="../index.html">Início</a>
         <a class="links" href="../index.html#about">Sobre</a>
         <a class="links" href="../index.html#features">Serviços</a>
-        <a class="links" href="../index.html#pricing">Planos</a>
+       
         <a class="links" href="../index.html#blogs">blogs</a>
       </div>
 
