@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18/04/2024 às 01:51
--- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- Tempo de geração: 14/06/2024 às 23:41
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,103 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `db_focusfit`
 --
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `cardiovasculares`
---
-
-CREATE TABLE `cardiovasculares` (
-  `id` int(11) NOT NULL,
-  `nome` varchar(150) NOT NULL,
-  `duracao` varchar(50) NOT NULL,
-  `ar_livre` varchar(150) NOT NULL,
-  `maquina` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `cardiovasculares`
---
-
-INSERT INTO `cardiovasculares` (`id`, `nome`, `duracao`, `ar_livre`, `maquina`) VALUES
-(1, 'Caminhada', '30-60', 'Sim', 'Esteira, ao Ar Livre'),
-(2, 'Corrida', '30-60', 'Sim', 'Esteira, Pista');
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `musculacao_geral`
---
-
-CREATE TABLE `musculacao_geral` (
-  `id` int(11) NOT NULL,
-  `nome` varchar(250) NOT NULL,
-  `duracao` varchar(50) NOT NULL,
-  `video` varchar(250) NOT NULL,
-  `series` int(20) NOT NULL,
-  `repeticoes` varchar(10) NOT NULL,
-  `tipo_treino` varchar(10) NOT NULL,
-  `trabalha` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `musculacao_geral`
---
-
-INSERT INTO `musculacao_geral` (`id`, `nome`, `duracao`, `video`, `series`, `repeticoes`, `tipo_treino`, `trabalha`) VALUES
-(1, 'Levantamento de Peso Morto	', '45-60 minutos', '', 4, '12', 'A	', 'Costas, Glúteos, Isquiotibiais'),
-(2, 'Flexões', '10-15 minutos	', '', 4, '10-15	', 'A ou B	', 'Peitoral, Ombros, Tríceps');
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `musculacao_homens`
---
-
-CREATE TABLE `musculacao_homens` (
-  `id` int(11) NOT NULL,
-  `nome` varchar(100) NOT NULL,
-  `duracao` varchar(100) NOT NULL,
-  `video` varchar(250) NOT NULL,
-  `series` int(10) NOT NULL,
-  `repeticoes` int(50) NOT NULL,
-  `tipo_treino` varchar(100) NOT NULL,
-  `trabalha` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `musculacao_homens`
---
-
-INSERT INTO `musculacao_homens` (`id`, `nome`, `duracao`, `video`, `series`, `repeticoes`, `tipo_treino`, `trabalha`) VALUES
-(1, 'Levantamento de Peso Morto	', '45-60 minutos', '', 4, 12, 'A	', 'Costas, Glúteos, Isquiotibiais'),
-(2, 'Supino Reto	', '30-45 minutos	', '', 4, 12, 'A	', 'Peitoral, Ombros, Tríceps');
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `musculacao_mulheres`
---
-
-CREATE TABLE `musculacao_mulheres` (
-  `id` int(11) NOT NULL,
-  `nome` varchar(100) NOT NULL,
-  `duracao` varchar(50) NOT NULL,
-  `video` varchar(250) NOT NULL,
-  `series` int(15) NOT NULL,
-  `repeticoes` varchar(50) NOT NULL,
-  `tipo_treino` varchar(10) NOT NULL,
-  `trabalha` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `musculacao_mulheres`
---
-
-INSERT INTO `musculacao_mulheres` (`id`, `nome`, `duracao`, `video`, `series`, `repeticoes`, `tipo_treino`, `trabalha`) VALUES
-(1, 'Levantamento Terra	', '30-45 minutos	', '', 4, '8-12', 'A ou B	', 'Costas, Glúteos, Isquiotibiais'),
-(2, 'Elevação Lateral com Halteres	', '15-20 minutos	', 'https://www.youtube.com/watch?v=W5hRdgwEoEA&ab_channel=MyTrainingPRO', 4, '10-12', 'A ou C	', 'Ombros');
 
 -- --------------------------------------------------------
 
@@ -159,17 +62,46 @@ CREATE TABLE `tabela_nutricional` (
   `gorduras_trans` float NOT NULL,
   `fibra_alimentar` float NOT NULL,
   `sodio` float NOT NULL,
-  `acucar` float NOT NULL
+  `acucar` float NOT NULL,
+  `img` varchar(365) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `tabela_nutricional`
 --
 
-INSERT INTO `tabela_nutricional` (`id`, `nome`, `valor_energetico`, `carboidratos`, `proteinas`, `gorduras_totais`, `gorduras_saturadas`, `gorduras_trans`, `fibra_alimentar`, `sodio`, `acucar`) VALUES
-(1, 'chocolate', 4, 5, 5, 6, 6, 6, 10, 10, 20),
-(2, 'Arroz', 4, 4, 4, 4, 4, 4, 4, 4, 4),
-(3, 'Filé de Frango', 101, 0, 28, 1, 1, 1, 0, 56, 0);
+INSERT INTO `tabela_nutricional` (`id`, `nome`, `valor_energetico`, `carboidratos`, `proteinas`, `gorduras_totais`, `gorduras_saturadas`, `gorduras_trans`, `fibra_alimentar`, `sodio`, `acucar`, `img`) VALUES
+(1, 'chocolate', 4, 5, 5, 6, 6, 6, 10, 10, 20, NULL),
+(2, 'Arroz', 4, 4, 4, 4, 4, 4, 4, 4, 4, NULL),
+(3, 'Filé de Frango', 101, 0, 28, 1, 1, 1, 0, 56, 0, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `tabela_treino`
+--
+
+CREATE TABLE `tabela_treino` (
+  `id` int(11) NOT NULL,
+  `nome_exercicio` varchar(250) NOT NULL,
+  `duracao` varchar(50) NOT NULL,
+  `exemplo_exercicio` varchar(250) NOT NULL,
+  `series` int(20) NOT NULL,
+  `repeticoes` varchar(10) NOT NULL,
+  `classificacao` varchar(10) NOT NULL,
+  `musculo_alvo` varchar(365) NOT NULL,
+  `categoria` varchar(356) NOT NULL,
+  `indicacao_sexo` varchar(365) DEFAULT NULL,
+  `indicacao_imc` varchar(365) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tabela_treino`
+--
+
+INSERT INTO `tabela_treino` (`id`, `nome_exercicio`, `duracao`, `exemplo_exercicio`, `series`, `repeticoes`, `classificacao`, `musculo_alvo`, `categoria`, `indicacao_sexo`, `indicacao_imc`) VALUES
+(1, 'Levantamento de Peso Morto	', '45-60 minutos', '', 4, '12', 'A	', 'Costas, Glúteos, Isquiotibiais', '', NULL, NULL),
+(2, 'Flexões', '10-15 minutos	', '', 4, '10-15	', 'A ou B	', 'Peitoral, Ombros, Tríceps', '', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -204,7 +136,8 @@ INSERT INTO `users_login` (`id`, `email`, `username`, `password`, `ativo`, `perf
 (10, 'icarootario@gmail.com', 'Pedro', '123', 1, 2, 'Icaro', NULL),
 (12, 'leandro@gmail.com', 'Leandro', 'Leandro1', 1, 1, 'Leandro', 'https://www.florence.edu.br/wp-content/uploads/2022/08/Imagem-Materia_Dia-do-Cachorro.png'),
 (14, 'teste2@gmail.com', '', '', 0, 2, 'Novo', ''),
-(15, 'gomao@gmail.com', 'Gomes', 'gomes123', 1, 1, 'Gomes', 'https://conteudo.imguol.com.br/c/esporte/82/2021/06/02/gol-de-bicicleta-de-cristiano-ronaldo-pelo-real-madrid-contra-a-juventus-1622663604572_v2_750x750.jpg');
+(15, 'gomao@gmail.com', 'Gomes', 'gomes123', 1, 1, 'Gomes', 'https://conteudo.imguol.com.br/c/esporte/82/2021/06/02/gol-de-bicicleta-de-cristiano-ronaldo-pelo-real-madrid-contra-a-juventus-1622663604572_v2_750x750.jpg'),
+(16, 'm@gmail.com', 'matheus', '123', 0, 2, 'matheus', 'null');
 
 -- --------------------------------------------------------
 
@@ -217,51 +150,26 @@ CREATE TABLE `user_infos` (
   `user_id` int(11) DEFAULT NULL,
   `idade` varchar(255) DEFAULT NULL,
   `objetivo` varchar(255) DEFAULT NULL,
-  `imc` float DEFAULT NULL,
-  `tipo_plano` varchar(20) DEFAULT NULL,
-  `perm` varchar(20) DEFAULT NULL
+  `imc` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `user_infos`
 --
 
-INSERT INTO `user_infos` (`id`, `user_id`, `idade`, `objetivo`, `imc`, `tipo_plano`, `perm`) VALUES
-(26, 8, 'velho', NULL, NULL, NULL, NULL),
-(29, 9, 'adulto', NULL, NULL, NULL, NULL),
-(30, 5, NULL, 'ganho_massa', NULL, NULL, NULL),
-(41, 10, NULL, 'perca_peso', NULL, NULL, NULL),
-(42, 4, NULL, 'ganho_massa', NULL, NULL, NULL),
-(44, 12, 'jovem', 'perca_peso', 32.14, NULL, NULL),
-(45, 15, 'jovem (18-26)', 'ganho de massa', 27.78, NULL, NULL);
+INSERT INTO `user_infos` (`id`, `user_id`, `idade`, `objetivo`, `imc`) VALUES
+(26, 8, 'velho', NULL, NULL),
+(29, 9, 'adulto', NULL, NULL),
+(30, 5, NULL, 'ganho_massa', NULL),
+(41, 10, NULL, 'perca_peso', NULL),
+(42, 4, NULL, 'ganho_massa', NULL),
+(44, 12, 'jovem', 'perca_peso', 32.14),
+(45, 15, 'jovem (18-26)', 'ganho de massa', 27.78),
+(46, 16, 'jovem (18-26)', 'ganho de massa', 18.17);
 
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices de tabela `cardiovasculares`
---
-ALTER TABLE `cardiovasculares`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `musculacao_geral`
---
-ALTER TABLE `musculacao_geral`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `musculacao_homens`
---
-ALTER TABLE `musculacao_homens`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `musculacao_mulheres`
---
-ALTER TABLE `musculacao_mulheres`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `perfil`
@@ -273,6 +181,12 @@ ALTER TABLE `perfil`
 -- Índices de tabela `tabela_nutricional`
 --
 ALTER TABLE `tabela_nutricional`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices de tabela `tabela_treino`
+--
+ALTER TABLE `tabela_treino`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -296,30 +210,6 @@ ALTER TABLE `user_infos`
 --
 
 --
--- AUTO_INCREMENT de tabela `cardiovasculares`
---
-ALTER TABLE `cardiovasculares`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de tabela `musculacao_geral`
---
-ALTER TABLE `musculacao_geral`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de tabela `musculacao_homens`
---
-ALTER TABLE `musculacao_homens`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de tabela `musculacao_mulheres`
---
-ALTER TABLE `musculacao_mulheres`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT de tabela `perfil`
 --
 ALTER TABLE `perfil`
@@ -332,16 +222,22 @@ ALTER TABLE `tabela_nutricional`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de tabela `tabela_treino`
+--
+ALTER TABLE `tabela_treino`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT de tabela `users_login`
 --
 ALTER TABLE `users_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de tabela `user_infos`
 --
 ALTER TABLE `user_infos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- Restrições para tabelas despejadas
